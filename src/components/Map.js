@@ -167,7 +167,7 @@ const WrappedMap = withScriptjs(withGoogleMap(Map));
 
  return (<><div style={{ width: "80%", height: "100vh", position:"relative", zIndex: '1', margin:'200px 200px 0px 200px'}}>
   <WrappedMap
-    googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${api}`}
+    googleMapURL={`https://cors-anywhere.herokuapp.com/maps.googleapis.com/maps/api/js?key=${api}`}
     loadingElement={<div style={{ height: `100%` }} />}
     containerElement={<div style={{ height: `600px`, margin: "65px"}} />}
     mapElement={<div style={{ height: `100%`, border:'solid #3c3b3d', borderRadius: '7px', boxShadow: '3px 5px #9c97a1' } } />}
